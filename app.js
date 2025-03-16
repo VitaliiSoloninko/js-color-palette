@@ -4,6 +4,12 @@
 // 0000FF -> Blue
 
 const cols = document.querySelectorAll('.col')
+document.addEventListener('keydown', evevt => {
+	// console.log(event.code)
+	if (event.code.toLowerCase() === 'space') {
+		setRandomColor()
+	}
+})
 
 function generateRandomColor() {
 	const hexCodes = '0123456789ABCDEF'
